@@ -8,7 +8,7 @@ WORKDIR /app
 COPY . .
 
 # Install dependencies
-RUN pip install --upgrade pip && pip install -r requirements.txt
+RUN pip install --upgrade pip && pip install -r requirement.txt
 
 # Run tests (optional, but good for debugging)
 RUN pytest tests/ || true
